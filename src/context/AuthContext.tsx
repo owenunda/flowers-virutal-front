@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { User, Role } from '../types';
+import { User } from '../types';
 import { authService } from '../services/auth.service';
 import { jwtDecode } from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';

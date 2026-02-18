@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { sileo } from 'sileo';
 import { useAuth } from '../context/AuthContext';
 import { authService } from '../services/auth.service';
-import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
 
 const Login = () => {
@@ -10,7 +9,6 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const { login } = useAuth();
-  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
